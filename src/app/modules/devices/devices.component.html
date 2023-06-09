@@ -1,0 +1,33 @@
+<div class="device-container">
+  <div class="table-container">
+    <table>
+      <tr>
+        <th>Name</th>
+        <th>Tags</th>
+        <th></th>
+      </tr>
+      <tr *ngFor="let devise of devises">
+        <td>
+          <a [routerLink]="[devise.id]">{{ devise.name }}</a>
+        </td>
+        <td>{{ devise.tags | tags }}</td>
+        <td class="right">
+          <app-light [description]="devise.description"></app-light>
+        </td>
+      </tr>
+    </table>
+  </div>
+
+  <div class="paginator-conpainer">
+    <span (click)="scrollPage(-1)"><</span>
+    <span (click)="setPage(item)" *ngFor="let item of getPagesArray()">{{
+      item
+    }}</span>
+    <span (click)="scrollPage(1)">></span>
+    <select name="" id="" (change)="onAmmountChange($event)">
+      <option value="10">10</option>
+      <option value="20">20</option>
+      <option value="40">40</option>
+    </select>
+  </div>
+</div>

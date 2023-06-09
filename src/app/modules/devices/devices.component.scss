@@ -1,0 +1,51 @@
+.table-container {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: 100%;
+  background-color: white;
+  height: 500px;
+}
+table {
+  width: 100%;
+  background-color: white;
+  border-collapse: collapse;
+}
+td,
+th {
+  text-align: left;
+
+  padding-top: 10px;
+
+  margin-bottom: 10px;
+}
+th {
+  border-collapse: collapse;
+  font-weight: normal;
+  border-bottom: 2px solid black;
+}
+th:first-child,
+td:first-child {
+  padding-left: 15px;
+}
+
+.device-container {
+  margin: 30px;
+}
+span {
+  margin-right: 5px;
+}
+.paginator-conpainer {
+  margin-top: 10px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.right {
+  display: flex;
+  justify-content: end;
+  padding-right: 15px;
+}
+a {
+  color: black;
+  text-transform: capitalize;
+}

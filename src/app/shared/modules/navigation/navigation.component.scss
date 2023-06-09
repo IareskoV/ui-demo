@@ -1,0 +1,17 @@
+div {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  & p {
+    display: inline-block;
+    width: 100%;
+    cursor: pointer;
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    &.active {
+      font-weight: 700;
+    }
+  }
+}

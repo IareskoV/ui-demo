@@ -1,0 +1,28 @@
+<div class="device-container">
+  <form action="" [formGroup]="deviceForm">
+    <div>
+      <label for="">name</label
+      ><input type="text" formControlName="name" required />
+    </div>
+
+    <div>
+      <label for="">tags</label
+      ><tag-input formControlName="tags" [modelAsStrings]="true"></tag-input>
+    </div>
+    <div>
+      <label for="">description</label>
+      <textarea
+        name=""
+        id=""
+        cols="30"
+        rows="10"
+        formControlName="description"
+      ></textarea>
+    </div>
+
+    <div class="button-container">
+      <div class="button" (click)="cansel()"><span>cancel</span></div>
+      <div class="button save" (click)="submitForm()"><span>save</span></div>
+    </div>
+  </form>
+</div>
